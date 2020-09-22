@@ -13,6 +13,10 @@ import SnapKit
 import ReusableKit
 import ReactorKit
 
+//typealias TableViewSectionModel = SectionModel<Void, TableViewCellSection>
+
+typealias ManageMentDataSource = RxTableViewSectionedReloadDataSource<TableViewCellSection>
+
 class ViewController: UIViewController, View {
     
     typealias Reactor = ViewReactor
@@ -25,18 +29,17 @@ class ViewController: UIViewController, View {
     
     // MARK: - Property
     var disposeBag = DisposeBag()
-    let dataSource = RxTableViewSectionedReloadDataSource<TableViewSectionModel>(configureCell: { dataSource, tableView, indexPath, sectionItems in
+	let dataSource: ManageMentDataSource = ManageMentDataSource(configureCell: { _, tableView, indexPath, items -> UITableViewCell in
         
-        switch sectionItems {
-        case let .defaultCell(reactor):
-            let cell = tableView.dequeue(Reusable.defaultCell, for: indexPath)
-            cell.reactor = reactor
-            return cell
-            
-        case let .switchCell(reactor):
-            let cell = tableView.dequeue(Reusable.switchCell, for: indexPath)
-            cell.reactor = reactor
-            return cell
+        switch items {
+		case .defaultCell(let reactor):
+			let cell = tableView.dequeue(Reusable.defaultCell, for: indexPath)
+			cell.reactor = reactor
+			return cell
+		case .switchCell(let reactor):
+			let cell = tableView.dequeue(Reusable.switchCell, for: indexPath)
+			cell.reactor = reactor
+			return cell
         }
     })
 
@@ -95,6 +98,8 @@ class ViewController: UIViewController, View {
         reactor.state.map{$0.sections}.asObservable()
             .bind(to: self.tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+		
+		
     }
 }
 

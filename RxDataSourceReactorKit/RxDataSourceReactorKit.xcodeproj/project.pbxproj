@@ -25,6 +25,7 @@
 		55BB24432517906000FA5D61 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BB24422517906000FA5D61 /* DefaultCell.swift */; };
 		89D1A610483C3A1F8A54E0F4 /* Pods_RxDataSourceReactorKit_RxDataSourceReactorKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8257078A19EBAE6927691E0F /* Pods_RxDataSourceReactorKit_RxDataSourceReactorKitUITests.framework */; };
 		AB1760EE5AF49D1EE71359D1 /* Pods_RxDataSourceReactorKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FF8BC15311C35E4F0304EF /* Pods_RxDataSourceReactorKitTests.framework */; };
+		C36D6AD9251999B9003E1C0D /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36D6AD8251999B9003E1C0D /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		827AEABB04C488902E8BC93C /* Pods-RxDataSourceReactorKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDataSourceReactorKitTests.debug.xcconfig"; path = "Target Support Files/Pods-RxDataSourceReactorKitTests/Pods-RxDataSourceReactorKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE698F5DE3EFD756F291DE1 /* Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests/Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B90B7E0D57F7790D9420F278 /* Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.release.xcconfig"; path = "Target Support Files/Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests/Pods-RxDataSourceReactorKit-RxDataSourceReactorKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C36D6AD8251999B9003E1C0D /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		E5FF8BC15311C35E4F0304EF /* Pods_RxDataSourceReactorKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDataSourceReactorKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 				557D5F10251784D500555D6A /* SceneDelegate.swift */,
 				557D5F12251784D500555D6A /* ViewController.swift */,
 				553168FE25185208002A982D /* ViewReactor.swift */,
+				C36D6AD8251999B9003E1C0D /* Section.swift */,
 				55BB24422517906000FA5D61 /* DefaultCell.swift */,
 				553168F925184ACF002A982D /* DefaultCellReactor.swift */,
 				55316903251853E1002A982D /* SwitchCell.swift */,
@@ -451,6 +454,7 @@
 				557D5F0F251784D500555D6A /* AppDelegate.swift in Sources */,
 				55399B2525178AAB00B40CC7 /* CellDataModel.swift in Sources */,
 				553168FA25184ACF002A982D /* DefaultCellReactor.swift in Sources */,
+				C36D6AD9251999B9003E1C0D /* Section.swift in Sources */,
 				557D5F11251784D500555D6A /* SceneDelegate.swift in Sources */,
 				553168FF25185208002A982D /* ViewReactor.swift in Sources */,
 			);
